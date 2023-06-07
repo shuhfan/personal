@@ -375,10 +375,10 @@ Author URL: http://w3layouts.com
       <div class="row">
         <div class="col-md-8 contact-form">
           <form action="https://script.google.com/macros/s/AKfycbzDZMqsNbYEogw3mMuoxWBBpgwzyKECB3ReWVwEE2bhnbkdiY6epg6FV_p67Od9GXDU/exec" method="post" id="contact-form">
-            <input type="text" class="form-control" name="w3lName" required placeholder="Name" /><br />
-            <input type="email" class="form-control" name="w3lSender" required placeholder="E-mail" /><br />
-            <input type="text" class="form-control" name="w3lSubject" required placeholder="Subject" /><br />
-            <textarea class="form-control" name="w3lMessage" required placeholder="Your Message" style="height:150px;"></textarea><br />
+            <input type="text" class="form-control" name="Name" required placeholder="Name" /><br />
+            <input type="email" class="form-control" name="Email" required placeholder="E-mail" /><br />
+            <input type="text" class="form-control" name="Subject" required placeholder="Subject" /><br />
+            <textarea class="form-control" name="Message" required placeholder="Your Message" style="height:150px;"></textarea><br />
             <button class="btn btn-primary theme-button" type="submit">Send</button>
           </form>
         </div>
@@ -502,18 +502,18 @@ Author URL: http://w3layouts.com
 
       $("#contact-form").validate({
         rules:{
-          w3lName:{
+          Name:{
             required: true,
             minlength:4
           },
-          w3lSender:{
+          Email:{
             required: true,
             email: true
           },
-          w3lSubject:{
+          Subject:{
             required: true
           },
-          w3lMessage:{
+          Message:{
             required: true
           }
         }
